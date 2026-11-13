@@ -162,20 +162,20 @@ h1 .l2{display:block;background:var(--grad);-webkit-background-clip:text;backgro
 .timeline li:last-child{padding-bottom:0}
 .timeline li::before{content:"";position:absolute;left:-34px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--emerald);box-shadow:0 0 0 5px rgba(52,211,153,.12)}
 .when{font:500 .85rem var(--mono);color:var(--cyan);margin-bottom:6px}
-.timeline h3{font-size:1.3rem;margin-bottom:4px}
+.timeline h2{font-size:1.3rem;margin-bottom:4px;font-family:var(--head);line-height:1.2}
 .org{color:var(--emerald);font-weight:600;font-size:.98rem;margin-bottom:8px}
 .timeline p.d{color:var(--muted);max-width:62ch}
 
-.edu{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:14px}
-.edu li{position:relative;padding-left:0}
-.edu .when{margin-bottom:2px}
-.edu .d{color:var(--muted)}
-.edu strong{color:var(--ink);font-weight:600}
 .training{margin-top:56px;padding:28px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--glass);max-width:760px}
-.training h3{font-size:1.3rem;margin-bottom:4px}
+.training h2{font-size:1.3rem;margin-bottom:4px;font-family:var(--head);line-height:1.2}
 .training .org{color:var(--emerald);font-weight:600;margin-bottom:8px}
 .training .d{color:var(--muted)}
 .training .when{font:500 .85rem var(--mono);color:var(--cyan);margin-bottom:6px}
+.shot-cert{aspect-ratio:1316/912;max-width:760px}
+.shot-cert img{object-fit:contain}
+.cert{margin-top:56px;padding:28px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--glass);max-width:820px}
+.cert h2{font-size:1.3rem;margin-bottom:4px;font-family:var(--head);line-height:1.2}
+.cert .d{color:var(--muted)}
 /* Footer */
 footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);background:linear-gradient(180deg,transparent,rgba(34,211,238,.05))}
 .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
@@ -359,6 +359,13 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
           <div class="tags"><span>Shopify</span><span>Website Development</span><span>E-commerce</span></div>
           <div class="links"><a href="#shopify">View project</a></div>
         </article>
+
+        <article class="card proj reveal" style="--d:90ms" data-tags="seo local ai">
+          <h3>SEO Mastery</h3>
+          <p>Tutedude SEO assignment: SEO theory, a website audit of GrowLocal Digital, keyword research, an optimized blog post and a white hat link-building plan.</p>
+          <div class="tags"><span>SEO</span><span>Keyword Research</span><span>Technical SEO</span><span>Link Building</span></div>
+          <div class="links"><a href="#seo-mastery">View project</a><a href="./Mannik_Gupta_SEO_Assignment.pdf" target="_blank" rel="noopener">Full assignment (PDF)</a></div>
+        </article>
       </div>
     </div>
   </section>
@@ -366,50 +373,70 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="wrap">
-      <h2 class="sec-title reveal">Experience and learning</h2>
-      <p class="sec-sub reveal">Ten years of work across sales, data and operations, plus my digital marketing training. Newest first.</p>
 
+      <h1 class="sec-title reveal">Working experience</h1>
       <ol class="timeline">
         <li class="reveal">
           <p class="when">August 2026 – Present</p>
-          <h3>Sales Executive</h3>
+          <h2>Sales Executive</h2>
           <p class="org">Chintamani Finlease Ltd, Delhi</p>
           <p class="d">Generate leads through telecalling, cold calls, field visits and references. Explain loan features and eligibility, and process documents with credit and operations teams to meet monthly targets.</p>
         </li>
         <li class="reveal">
           <p class="when">2025 – 2026</p>
-          <h3>Data Analyst (Purchase Executive)</h3>
+          <h2>Data Analyst (Purchase Executive)</h2>
           <p class="org">Chhabra Healthcare Solutions Pvt Ltd, Delhi</p>
           <p class="d">Analyse healthcare data to find trends, validate data across sources, and train the team on data analysis tools.</p>
         </li>
         <li class="reveal">
           <p class="when">2021 – 2025</p>
-          <h3>Data Entry Administrator, then Data Entry Clerk</h3>
+          <h2>Data Entry Administrator, then Data Entry Clerk</h2>
           <p class="org">New Medicine Mart and Krishnaa Medicos, Delhi</p>
           <p class="d">Built tracking spreadsheets, kept records accurate, monitored stock expiry and coordinated with distributors and partners.</p>
         </li>
         <li class="reveal">
           <p class="when">2016 – 2020</p>
-          <h3>Earlier roles in sales, support and onboarding</h3>
+          <h2>Earlier roles in sales, support and onboarding</h2>
           <p class="org">Iconic Group, GeniousTel, 3i Infotech BPO, Paytm</p>
           <p class="d">Delivered sales report insights to regional managers, made outbound sales calls, kept service records, and improved customer onboarding at Paytm.</p>
         </li>
+      </ol>
+
+      <h1 class="sec-title reveal" style="margin-top:72px">Education</h1>
+      <ol class="timeline">
         <li class="reveal">
-          <h3>Education</h3>
-          <ol class="edu">
-            <li><p class="when">2017</p><p class="d"><strong>MBA in Information Technology (dual degree)</strong>, with Digital Marketing and E-Commerce specialization. Kalinga University, Raipur</p></li>
-            <li><p class="when">2015</p><p class="d"><strong>B.Tech in Electronics and Communication Engineering</strong>. Galgotias College of Engineering and Technology, Greater Noida</p></li>
-            <li><p class="when">2012</p><p class="d"><strong>Diploma (Polytechnic) in Electronics and Communication Engineering</strong>. Jaswant Keshav Puri Polytechnic College, Sonipat</p></li>
-          </ol>
+          <p class="when">2017</p>
+          <h2>MBA in Information Technology (dual degree)</h2>
+          <p class="org">Kalinga University, Raipur</p>
+          <p class="d">Specialization in Digital Marketing and E-Commerce.</p>
+        </li>
+        <li class="reveal">
+          <p class="when">2015</p>
+          <h2>B.Tech in Electronics and Communication Engineering</h2>
+          <p class="org">Galgotias College of Engineering and Technology, Greater Noida</p>
+        </li>
+        <li class="reveal">
+          <p class="when">2012</p>
+          <h2>Diploma (Polytechnic) in Electronics and Communication Engineering</h2>
+          <p class="org">Jaswant Keshav Puri Polytechnic College, Sonipat</p>
         </li>
       </ol>
 
+      <h1 class="sec-title reveal" style="margin-top:72px">Learning</h1>
       <div class="training reveal">
         <p class="when">Ongoing</p>
-        <h3>Digital Marketing Training</h3>
+        <h2>Digital Marketing Training</h2>
         <p class="org">Tutedude</p>
         <p class="d">Practical, project-based training in SEO, Google Ads, Performance Max, Demand Gen, Meta Ads, GA4, GTM, Google Business Profile, WordPress, Shopify and email marketing. 6 of 29 projects approved so far.</p>
       </div>
+
+      <div class="cert reveal">
+        <h2>Tutedude SEO course certificate</h2>
+        <p class="d">Completed on 24 October 2026. Certificate ID TD-MANN-SE-1526.</p>
+        <div class="shot shot-cert" style="margin-top:22px"><div class="shot-inner"><img src="./seo-certificate.jpg" alt="Tutedude SEO course certificate for Mannik Gupta" loading="lazy" onerror="this.style.display='none'"></div></div>
+        <a class="btn btn-ghost" style="margin-top:22px" href="./seo-certificate.jpg" target="_blank" rel="noopener">View certificate</a>
+      </div>
+
     </div>
   </section>
 </div>
@@ -458,6 +485,60 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
           <li>Basics of setting up a store so it is ready for SEO and ads later.</li>
         </ul>
       </article>
+    </div>
+  </section>
+</div>
+
+<!-- SEO MASTERY DETAIL PAGE -->
+<div id="seo-view" hidden>
+  <section class="wrap" style="padding-top:clamp(40px,6vw,72px)">
+    <a class="back" href="#projects">&larr; Back to projects</a>
+    <p class="badge" style="margin-bottom:18px">Tutedude · SEO assignment</p>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.6rem)">SEO Mastery</h1>
+    <p class="bio" style="max-width:68ch">My Tutedude SEO assignment covers SEO fundamentals, keyword research, on-page and off-page SEO. For the practical part, I audited my practice site GrowLocal Digital and wrote an SEO blog post and a link-building plan.</p>
+
+    <div class="tags" style="margin:26px 0 40px"><span>SEO Fundamentals</span><span>Keyword Research</span><span>On-Page SEO</span><span>Off-Page SEO</span><span>Technical SEO</span></div>
+
+    <div class="case">
+      <article class="card">
+        <h3>Website audit: GrowLocal Digital</h3>
+        <ul>
+          <li>Page title is 118 characters, too long. Google cuts titles at about 60, so I suggested a 57-character version.</li>
+          <li>The H1 has no target keyword. I suggested a keyword-rich H1 for Delhi NCR businesses.</li>
+          <li>Heading order and language tag need fixing (lang en-US vs en-IN).</li>
+          <li>PageSpeed (23 Oct 2026): Performance 96 mobile and 97 desktop, SEO 100.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Keyword research</h3>
+        <ul>
+          <li>Researched 9 keywords for digital marketing, local SEO and Google Ads services in Delhi NCR.</li>
+          <li>Split them into short-tail and long-tail, with volume, difficulty and CPC.</li>
+          <li>Mapped each keyword to a page on the site, starting with the easier ones.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>SEO blog post</h3>
+        <ul>
+          <li>Topic: digital marketing career in India, focus keyword used in title, H1, H2s and body.</li>
+          <li>Meta title (59 characters) and meta description (150 characters) written to match the search intent.</li>
+          <li>Includes an internal link, an external link and an image with alt text. About 526 words.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Link-building plan</h3>
+        <ul>
+          <li>White hat methods only: guest posting, resource-page and broken-link building, and digital PR.</li>
+          <li>Monthly targets for outreach, guest posts and placements, with a sample outreach email.</li>
+          <li>Tracking progress monthly in Google Search Console.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="cert" style="margin:56px 0 0">
+      <h2>Tutedude SEO course certificate</h2>
+      <p class="d">Completed on 24 October 2026. Certificate ID TD-MANN-SE-1526.</p>
+      <div class="shot shot-cert" style="margin-top:22px"><div class="shot-inner"><img src="./seo-certificate.jpg" alt="Tutedude SEO course certificate for Mannik Gupta" loading="lazy" onerror="this.style.display='none'"></div></div>
     </div>
   </section>
 </div>
@@ -555,23 +636,32 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
     }
   });
 
-  // Route: #shopify shows the project page; any other hash shows the home page
+  // Routes: #shopify and #seo-mastery show project pages; other hashes show the home page
   var homeView = document.getElementById('home-view');
-  var shopifyView = document.getElementById('shopify-view');
+  var pages = { '#shopify': 'shopify-view', '#seo-mastery': 'seo-view' };
+  var titles = { '#shopify': 'UrbanBrew Cafe Shopify store | Mannik Gupta', '#seo-mastery': 'SEO Mastery | Mannik Gupta' };
+  var detailShown = false;
   function route(){
-    var onProject = location.hash === '#shopify';
-    homeView.hidden = onProject;
-    shopifyView.hidden = !onProject;
-    if(onProject){ window.scrollTo(0,0); document.title = 'UrbanBrew Cafe Shopify store | Mannik Gupta'; }
-    else { document.title = 'Mannik Gupta | Digital Marketer, Delhi/NCR'; }
+    var h = location.hash;
+    var page = pages[h];
+    detailShown = !!page;
+    homeView.hidden = detailShown;
+    Object.keys(pages).forEach(function(k){
+      document.getElementById(pages[k]).hidden = (k !== h);
+    });
+    if(detailShown){
+      window.scrollTo(0,0);
+      document.title = titles[h];
+    } else {
+      document.title = 'Mannik Gupta | Digital Marketer, Delhi/NCR';
+    }
   }
   window.addEventListener('hashchange', function(){
-    var h = location.hash;
-    if(h === '#shopify'){ route(); return; }
-    // jump from project page back to a home section (e.g. #projects)
-    if(!shopifyView.hidden){
-      route();
-      var t = document.getElementById(h.slice(1));
+    var wasDetail = detailShown;
+    route();
+    // going from a project page back to a home section (e.g. #projects): scroll to it
+    if(!detailShown && wasDetail){
+      var t = document.getElementById(location.hash.slice(1));
       if(t){ requestAnimationFrame(function(){ t.scrollIntoView({behavior:'auto', block:'start'}); }); }
     }
   });
