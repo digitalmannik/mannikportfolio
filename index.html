@@ -195,6 +195,26 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
   .load,.reveal{opacity:1;transform:none}
 }
 .no-js .reveal,.no-js .load{opacity:1;transform:none;animation:none}
+
+/* Project detail page (in-file route: #shopify) */
+.shot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:8px 0 48px}
+.shot{position:relative;aspect-ratio:16/10;padding:3px;border-radius:22px;background:conic-gradient(from var(--a,0deg),var(--emerald),var(--cyan),#0b3b46,var(--emerald));animation:spin 12s linear infinite;box-shadow:0 0 60px -14px rgba(34,211,238,.35)}
+.shot-inner{position:relative;width:100%;height:100%;border-radius:19px;overflow:hidden;background:var(--bg-2);display:grid;place-items:center}
+.shot-inner span{position:absolute;padding:0 14px;text-align:center;font:500 .8rem var(--mono);color:var(--muted)}
+.shot-inner img{position:relative;width:100%;height:100%;object-fit:cover;object-position:top center}
+.shot figcaption{position:absolute;left:0;right:0;bottom:-30px;text-align:center;font-size:.85rem;color:var(--muted)}
+.shot-tall{aspect-ratio:649/1400}
+.shot-tall img{object-fit:contain;background:var(--bg-2)}
+.shot-grid{align-items:start}
+.shot-wrap{padding-bottom:34px}
+.back{display:inline-flex;align-items:center;gap:8px;margin-bottom:28px;color:var(--cyan);text-decoration:none;font-weight:600;padding:8px 0;border-bottom:2px solid transparent}
+.back:hover{border-color:var(--cyan)}
+.case{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px}
+.case .card h3{font-size:1.2rem;margin-bottom:10px}
+.case .card p,.case .card li{color:var(--muted);font-size:.98rem}
+.case ul{margin:0;padding-left:20px}
+.case li+li{margin-top:6px}
+@media(max-width:860px){.shot-grid{grid-template-columns:1fr}.case{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -216,6 +236,7 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
 </header>
 
 <main id="main">
+<div id="home-view">
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="wrap hero-grid">
@@ -315,12 +336,19 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
           <p>A tracking sheet for profiles and listings across Google Business Profile, Bing Places, Blogger, Medium, LinkedIn and Pinterest, with status and link for each.</p>
           <div class="metric"><b>6+</b><span>platforms tracked in one sheet</span></div>
           <div class="tags"><span>Off-page SEO</span><span>Google Sheets</span><span>Listings</span></div>
-          <div class="links"><a href="#" rel="noopener">View sheet</a><a href="https://github.com/digitalmannik" rel="noopener" target="_blank">GitHub repo</a></div>
+          <div class="links"><a href="https://docs.google.com/spreadsheets/d/1SaTP8rL6h18uS3B6yh38n1tZvH-izcAe/edit?usp=sharing" rel="noopener" target="_blank">View sheet</a><a href="https://github.com/digitalmannik" rel="noopener" target="_blank">GitHub repo</a></div>
         </article>
 
         
 
         
+
+        <article class="card proj reveal" style="--d:90ms" data-tags="sheets">
+          <h3>UrbanBrew Cafe Shopify store</h3>
+          <p>Online store for UrbanBrew Cafe built on Shopify during training: products, collections, navigation and homepage layout, with screenshots of the work.</p>
+          <div class="tags"><span>Shopify</span><span>Website Development</span><span>E-commerce</span></div>
+          <div class="links"><a href="#shopify">View project</a></div>
+        </article>
       </div>
     </div>
   </section>
@@ -371,6 +399,55 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
       </ol>
     </div>
   </section>
+</div>
+
+<!-- PROJECT DETAIL PAGE -->
+<div id="shopify-view" hidden>
+  <section class="wrap" style="padding-top:clamp(40px,6vw,72px)">
+    <a class="back" href="#projects">&larr; Back to projects</a>
+    <p class="badge" style="margin-bottom:18px">Shopify · Store setup</p>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.6rem)">UrbanBrew Cafe</h1>
+    <p class="bio" style="margin-top:12px;font-weight:600;color:var(--ink)">Shopify store creation project</p>
+    <p class="bio" style="max-width:68ch">I built the online store for UrbanBrew Cafe on Shopify as part of my Tutedude training: store setup, product pages, collections and the basic settings needed to launch a small online shop. The store is not live, so the screenshots below show the work.</p>
+
+    <div class="tags" style="margin:26px 0 56px"><span>Shopify</span><span>Website Development</span><span>Store Setup</span><span>E-commerce</span></div>
+
+    <div class="shot-grid">
+      <figure class="shot-wrap" style="margin:0">
+        <div class="shot shot-tall"><div class="shot-inner"><span>Add ./shopify-home.jpg (store homepage)</span><img src="./shopify-home.jpg" alt="UrbanBrew Cafe Shopify store homepage" loading="lazy" onerror="this.style.display='none'"></div></div>
+        <figcaption>Homepage</figcaption>
+      </figure>
+      <figure class="shot-wrap" style="margin:0">
+        <div class="shot"><div class="shot-inner"><span>Add ./shopify-product.jpg (product page)</span><img src="./shopify-product.jpg" alt="UrbanBrew Cafe product page" loading="lazy" onerror="this.style.display='none'"></div></div>
+        <figcaption>Product page</figcaption>
+      </figure>
+      <figure class="shot-wrap" style="margin:0">
+        <div class="shot"><div class="shot-inner"><span>Add ./shopify-cart.jpg (cart page)</span><img src="./shopify-cart.jpg" alt="UrbanBrew Cafe cart page" loading="lazy" onerror="this.style.display='none'"></div></div>
+        <figcaption>Cart page</figcaption>
+      </figure>
+    </div>
+
+    <div class="case">
+      <article class="card">
+        <h3>What I did</h3>
+        <ul>
+          <li>Set up the store, currency and basic settings.</li>
+          <li>Added products with titles, descriptions and images.</li>
+          <li>Organised products into collections for easy browsing.</li>
+          <li>Set up the navigation menu and the main homepage layout.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>What I learned</h3>
+        <ul>
+          <li>How a Shopify store is structured: products, collections and pages.</li>
+          <li>Writing product copy that is clear and useful to a buyer.</li>
+          <li>Basics of setting up a store so it is ready for SEO and ads later.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</div>
 </main>
 
 <!-- CONTACT -->
@@ -464,6 +541,28 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
       document.body.removeChild(t); done(ok);
     }
   });
+
+  // Route: #shopify shows the project page; any other hash shows the home page
+  var homeView = document.getElementById('home-view');
+  var shopifyView = document.getElementById('shopify-view');
+  function route(){
+    var onProject = location.hash === '#shopify';
+    homeView.hidden = onProject;
+    shopifyView.hidden = !onProject;
+    if(onProject){ window.scrollTo(0,0); document.title = 'UrbanBrew Cafe Shopify store | Mannik Gupta'; }
+    else { document.title = 'Mannik Gupta | Digital Marketer, Delhi/NCR'; }
+  }
+  window.addEventListener('hashchange', function(){
+    var h = location.hash;
+    if(h === '#shopify'){ route(); return; }
+    // jump from project page back to a home section (e.g. #projects)
+    if(!shopifyView.hidden){
+      route();
+      var t = document.getElementById(h.slice(1));
+      if(t){ requestAnimationFrame(function(){ t.scrollIntoView({behavior:'auto', block:'start'}); }); }
+    }
+  });
+  route();
 
   document.getElementById('yr').textContent = new Date().getFullYear();
 })();
