@@ -366,6 +366,13 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
           <div class="tags"><span>SEO</span><span>Keyword Research</span><span>Technical SEO</span><span>Link Building</span></div>
           <div class="links"><a href="#seo-mastery">View project</a><a href="./Mannik_Gupta_SEO_Assignment.pdf" target="_blank" rel="noopener">Full assignment (PDF)</a></div>
         </article>
+
+        <article class="card proj reveal" style="--d:90ms" data-tags="local ads">
+          <h3>Google Business Profile</h3>
+          <p>A verified Google Business Profile for GrowLocal Digital, set up with the business category, website link and description so the agency shows up in Search and Maps.</p>
+          <div class="tags"><span>Google Business Profile</span><span>Local SEO</span><span>Google Maps</span></div>
+          <div class="links"><a href="#gbp">View project</a><a href="https://share.google/9U9w0lge0UhvGXpfg" target="_blank" rel="noopener">Live profile</a></div>
+        </article>
       </div>
     </div>
   </section>
@@ -542,6 +549,54 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
     </div>
   </section>
 </div>
+
+<!-- GBP DETAIL PAGE -->
+<div id="gbp-view" hidden>
+  <section class="wrap" style="padding-top:clamp(40px,6vw,72px)">
+    <a class="back" href="#projects">&larr; Back to projects</a>
+    <p class="badge" style="margin-bottom:18px">Google · Local SEO</p>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.6rem)">Google Business Profile</h1>
+    <p class="bio" style="max-width:68ch">A verified Google Business Profile for GrowLocal Digital. The screenshots below show the admin view and how the listing appears in Google Search, signed out.</p>
+
+    <div class="tags" style="margin:26px 0 40px"><span>Google Business Profile</span><span>Local SEO</span><span>Google Maps</span></div>
+
+    <div class="shot-grid" style="align-items:start">
+      <figure style="margin:0">
+        <div class="shot" style="aspect-ratio:auto"><div class="shot-inner" style="position:relative;display:block"><img src="./gbp-admin.jpg" alt="GrowLocal Digital Google Business Profile admin dashboard showing a verified profile" loading="lazy" style="position:static;height:auto;object-fit:contain" onerror="this.style.display='none'"></div></div>
+        <figcaption style="position:static;margin-top:14px;text-align:center;font-size:.85rem;color:var(--muted)">Admin view: verified profile</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <div class="shot" style="aspect-ratio:auto"><div class="shot-inner" style="position:relative;display:block"><img src="./gbp-live-search.jpg" alt="GrowLocal Digital listing in Google Search and Maps, signed out" loading="lazy" style="position:static;height:auto;object-fit:contain" onerror="this.style.display='none'"></div></div>
+        <figcaption style="position:static;margin-top:14px;text-align:center;font-size:.85rem;color:var(--muted)">Public view: search and Maps listing</figcaption>
+      </figure>
+    </div>
+
+    <div class="case" style="margin-top:56px">
+      <article class="card">
+        <h3>What the listing shows</h3>
+        <ul>
+          <li>Verified profile, managed by me.</li>
+          <li>Category set to Marketing agency.</li>
+          <li>Website linked to the GrowLocal Digital site.</li>
+          <li>Business description: a digital marketing agency for Delhi/NCR businesses with SEO, Google Ads, social media and content creation.</li>
+          <li>Shows in Google Search and Google Maps for the business name.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Why it matters for local SEO</h3>
+        <ul>
+          <li>A verified profile tells Google the business is real and where it is located.</li>
+          <li>Category, website and description help the listing show for the right local searches.</li>
+          <li>Profile details are what I track for off-page SEO alongside the listings sheet.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div style="margin-top:40px">
+      <a class="btn btn-primary" href="https://share.google/9U9w0lge0UhvGXpfg" target="_blank" rel="noopener">Open live profile</a>
+    </div>
+  </section>
+</div>
 </main>
 
 <!-- CONTACT -->
@@ -638,8 +693,8 @@ footer{padding:clamp(64px,9vw,104px) 0 40px;border-top:1px solid var(--line);bac
 
   // Routes: #shopify and #seo-mastery show project pages; other hashes show the home page
   var homeView = document.getElementById('home-view');
-  var pages = { '#shopify': 'shopify-view', '#seo-mastery': 'seo-view' };
-  var titles = { '#shopify': 'UrbanBrew Cafe Shopify store | Mannik Gupta', '#seo-mastery': 'SEO Mastery | Mannik Gupta' };
+  var pages = { '#shopify': 'shopify-view', '#seo-mastery': 'seo-view', '#gbp': 'gbp-view' };
+  var titles = { '#shopify': 'UrbanBrew Cafe Shopify store | Mannik Gupta', '#seo-mastery': 'SEO Mastery | Mannik Gupta', '#gbp': 'Google Business Profile | Mannik Gupta' };
   var detailShown = false;
   function route(){
     var h = location.hash;
